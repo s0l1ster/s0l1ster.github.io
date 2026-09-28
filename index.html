@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <title>Gym Together</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <div class="eyebrow">WEEKLY GYM PLANNER</div>
+        <h1>Gym Together <span>🏋️</span></h1>
+        <p id="weekLabel">Loading week…</p>
+      </div>
+      <div id="status" class="status">Connecting…</div>
+    </header>
+
+    <section class="card who-card">
+      <h2>Who are you?</h2>
+      <div class="people">
+        <button class="person" data-person="vasyl">👤 Vasyl</button>
+        <button class="person" data-person="oleg">👤 Oleg</button>
+      </div>
+    </section>
+
+    <section id="planner" class="card hidden">
+      <div class="section-head">
+        <div>
+          <h2>Your days</h2>
+          <p>Tap the days you can go to the gym.</p>
+        </div>
+        <button id="clearBtn" class="text-btn">Clear</button>
+      </div>
+      <div id="days" class="days"></div>
+      <div class="save-note">Changes are saved automatically and appear on the other phone instantly.</div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <div>
+          <h2>This week</h2>
+          <p id="updatedText">Waiting for the first update…</p>
+        </div>
+        <span class="live-dot">LIVE</span>
+      </div>
+      <div id="summary" class="summary"></div>
+    </section>
+
+    <div id="toast" class="toast"></div>
+    <footer>New week = fresh schedule automatically · <span id="weekKey"></span></footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
